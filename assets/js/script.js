@@ -37,6 +37,16 @@ window.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+window.addEventListener('DOMContentLoaded', function () {
+    var textarea = document.getElementById('valor');
+    var output = document.getElementById('output-valor');
+
+    textarea.addEventListener('input', function () {
+        var texto = textarea.value.replace(/\n/g, '<br>');
+        output.innerHTML = texto;
+    });
+});
+
 function imprimirParteEspecifica() {
     window.print();
 }

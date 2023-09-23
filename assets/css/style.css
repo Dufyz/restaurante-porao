@@ -49,10 +49,7 @@ body {
     color: black;
     border-radius: 30px;
     padding: 20px;
-}
-
-.print-container .teste p {
-    margin-top: 10px;
+    text-transform: uppercase;
 }
 
 .cliente-info-container {
@@ -114,7 +111,7 @@ input[type="checkbox"] {
     #conteudo,
     #conteudo * {
         width: 100%;
-        /* height: 100%; */
+        height: 90%;
         visibility: visible;
     }
 
