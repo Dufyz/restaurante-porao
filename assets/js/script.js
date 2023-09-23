@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', function () {
-    var input = document.getElementById('texto-input-nome');
-    var output = document.getElementById('texto-output-nome');
+    var input = document.getElementById('nome');
+    var output = document.getElementById('output-nome');
 
     input.addEventListener('input', function () {
         output.textContent = input.value;
@@ -8,8 +8,8 @@ window.addEventListener('DOMContentLoaded', function () {
 });
 
 window.addEventListener('DOMContentLoaded', function () {
-    var textarea = document.getElementById('texto-input-pedido');
-    var output = document.getElementById('texto-output-pedido');
+    var textarea = document.getElementById('telefone');
+    var output = document.getElementById('output-telefone');
 
     textarea.addEventListener('input', function () {
         var texto = textarea.value.replace(/\n/g, '<br>');
@@ -18,8 +18,18 @@ window.addEventListener('DOMContentLoaded', function () {
 });
 
 window.addEventListener('DOMContentLoaded', function () {
-    var textarea = document.getElementById('texto-input-endereco');
-    var output = document.getElementById('texto-output-endereco');
+    var textarea = document.getElementById('pedido');
+    var output = document.getElementById('output-pedido');
+
+    textarea.addEventListener('input', function () {
+        var texto = textarea.value.replace(/\n/g, '<br>');
+        output.innerHTML = texto;
+    });
+});
+
+window.addEventListener('DOMContentLoaded', function () {
+    var textarea = document.getElementById('endereco');
+    var output = document.getElementById('output-endereco');
 
     textarea.addEventListener('input', function () {
         var texto = textarea.value.replace(/\n/g, '<br>');

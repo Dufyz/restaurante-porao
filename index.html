@@ -16,50 +16,52 @@
         <div class="form-container">
             <div class="cliente-info-container">
                 <label for="">Nome</label></br>
-                <input type="text" name="" id="">
+                <input type="text" id="nome">
             </div>
             <div class="cliente-info-container">
                 <label for="">Telefone</label></br>
-                <input type="text" name="" id="">
+                <input type="text" id="telefone">
             </div>
             <div class="cliente-info-container">
                 <label for="">Método de pagamento</label></br>
                 <div class="checkbox-container">
-                    <input type="checkbox" name="" id=""><label for="">Cartão</label></br>
+                    <input type="checkbox" id="" value="Cartão"><label for="">Cartão</label></br>
                 </div>
                 <div class="checkbox-container">
-                    <input type="checkbox" name="" id=""><label for="">Dinheiro</label></br>
+                    <input type="checkbox" id="" value="Dinheiro"><label for="">Dinheiro</label></br>
                 </div>
                 <div class="checkbox-container">
-                    <input type="checkbox" name="" id=""><label for="">Pix</label></br>
+                    <input type="checkbox" id="" value="Pix"><label for="">Pix</label></br>
                 </div>
             </div>
             <div class="cliente-info-container">
                 <label for="">Endereço</label></br>
-                <textarea cols="30" rows="5"></textarea>
+                <textarea cols="30" rows="5" id="endereco"></textarea>
             </div>
             <div class="cliente-info-container">
                 <label for="">Pedido</label></br>
-                <textarea cols="30" rows="5"></textarea>
+                <textarea cols="30" rows="5" id="pedido"></textarea>
             </div>
         </div>
-        <div class="print-container">
+        <div class="print-container" id="conteudo">
             <div class="titulo">
                 <h2>Restaurante Porão</h2>
                 <p>---- Nota ----</p>
             </div>
-            <p>Nome</p>
-            <p>Telefone</p>
-            <p>Pagamento</p>
-            <p>Endereço</p>
-            <p>Pedido</p>
-            <p>Data do pedido</p>
+            <p>Nome: <span id="output-nome"></span></p>
+            <p>Telefone: <span id="output-telefone"></span></p>
+            <p>Pagamento: <span id="resultado"></span></p>
+            <p>Endereço: <span id="output-endereco"></span></p>
+            <p>Pedido: <span id="output-pedido"></span></p>
+            <p>Data do pedido: <span id="data-hora"></span></p>
         </div>
     </div>
     <div class="button-container">
-        <button type="button" value="">Imprimir</button>
-        <button type="button" value="">Atualizar</button>
+        <a type="button" onclick="imprimirParteEspecifica()"><button type="button" value="">Imprimir</button></a>
+        <a type="button" onclick="atualizarPagina()"><button type="button" value="">Atualizar</button></a>
     </div>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
